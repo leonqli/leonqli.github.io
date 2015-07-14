@@ -17,7 +17,13 @@
   <script type='text/javascript' src='//pubchem.ncbi.nlm.nih.gov/widget/1.0.2.1b/pubchem.widgets.js'></script>
   <link rel="stylesheet" type="text/css" href="//pubchem.ncbi.nlm.nih.gov/widget/extjs-4.1.1/resources/css/ext-all-gray-scoped.css">
   <link rel="stylesheet" type="text/css" href="//pubchem.ncbi.nlm.nih.gov/widget/1.0.2.1b/pubchem.widgets.css"">
-	
+ 
+ 
+ <script type='text/javascript'>Ext = {buildSettings:{"scopeResetCSS":true }};</script>
+      <script type='text/javascript' src='//pubchem.ncbi.nlm.nih.gov/widget/extjs-4.1.1/ext-all.js'></script>
+      <script type='text/javascript' src='//pubchem.ncbi.nlm.nih.gov/widget/1.0.2.1b/pubchem.widgets.js'></script>
+      <link rel="stylesheet" type="text/css" href="//pubchem.ncbi.nlm.nih.gov/widget/extjs-4.1.1/resources/css/ext-all-gray-scoped.css">
+    
 	
   </head>
   <body>
@@ -54,6 +60,21 @@
       </script>
       
   <div id="mydiv"></div>
+  
+
+   <script type="text/javascript">
+        Ext.onReady(function() {
+            PubChem.pcautocp({
+                dictionary: 'pc_compoundnames',
+                divid: 'chemicalsdiv',
+                fieldname: 'chemicals',
+                multiSelect: true
+            });
+        });
+      </script>
+
+<div id="chemicalsdiv"></div>
+
       
       
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
