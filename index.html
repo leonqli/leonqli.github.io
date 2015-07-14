@@ -11,6 +11,14 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+  <!-- pubchem -->
+  <script type='text/javascript'>Ext = {buildSettings:{"scopeResetCSS":true }};</script>
+  <script type='text/javascript' src='//pubchem.ncbi.nlm.nih.gov/widget/extjs-4.1.1/ext-all.js'></script>
+  <script type='text/javascript' src='//pubchem.ncbi.nlm.nih.gov/widget/1.0.2.1b/pubchem.widgets.js'></script>
+  <link rel="stylesheet" type="text/css" href="//pubchem.ncbi.nlm.nih.gov/widget/extjs-4.1.1/resources/css/ext-all-gray-scoped.css">
+  <link rel="stylesheet" type="text/css" href="//pubchem.ncbi.nlm.nih.gov/widget/1.0.2.1b/pubchem.widgets.css"">
+	
+	
   </head>
   <body>
     <div class="wrapper">
@@ -24,8 +32,30 @@
       </header>
       <section>
         <h3>
+  
+  
+  
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
+
+
+ <script type='text/javascript'>
+        Ext.onReady(function() {
+          var grid = PubChem.widget.CreateGridTable({
+            gridtabletype: 'patent',
+            cid: 2244,
+            renderTo: 'mydiv',
+            width: 500,
+            height: 300,
+            title: 'Patent Table for Aspirin [PubChem CID 2244]',
+            helpurl: 'http://pubchem.ncbi.nlm.nih.gov/widget/docs/widget_help.html'
+          });
+        });
+      </script>
+      
+  <div id="mydiv"></div>
+      
+      
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
 <pre><code>$ cd your_repo_root/repo_name
